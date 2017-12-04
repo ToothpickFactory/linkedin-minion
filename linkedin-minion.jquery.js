@@ -1,6 +1,6 @@
 var peopleToConnect = 20;
 var scrollLoop = setInterval(function(){
-  var connectArr = $('button[data-control-name="invite"]');
+  var connectArr = document.querySelectorAll("button[data-control-name='invite'");
   if(connectArr.length >= peopleToConnect){
     clearInterval(scrollLoop);
     var index = 0;
